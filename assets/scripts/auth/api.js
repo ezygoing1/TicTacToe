@@ -32,7 +32,12 @@ const signIn = function (formData) {
     }
   })
 }
-
+const signOut = function (formData) {
+  return $.ajax({
+    method: 'POST',
+    url: config.apiUrl + '/sign-out'
+  })
+}
 const changePassword = function (formData) {
   return $.ajax({
     method: 'PATCH',
@@ -48,8 +53,19 @@ const changePassword = function (formData) {
     }
   })
 }
+const newGame = function () {
+  return $.ajax({
+    method: 'POST',
+    url: config.apiUrl + '/games',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
 module.exports = {
   signUp,
   signIn,
+  signOut,
+  newGame,
   changePassword
 }

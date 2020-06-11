@@ -3,7 +3,13 @@
 curl "https://library-express-api.herokuapp.com/change-password" \
   --include \
   --request PATCH \
+  --header "Authorization: Token token=${TOKEN}" \
   --header "Content-Type: application/json" \
-  --data ''
+  --data '{
+    "passwords": {
+      "old": "'"${OLDPW}"'",
+      "new": "'"${NEWPW}"'"
+    }
+  }'
 
 echo
