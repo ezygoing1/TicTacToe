@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>API Token Authentication</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+
+    <body>
+
+      <h1>Tic Tac Toe</h1>
+
+      <h2> To Win You Must Get Three In A Row!</h2>
+
+      <p id="message"></p>
+
+      <section>
+        <form id="sign-up">
+
+        <h1>Sign Up</h1>
+          <input type="email" name="credentials[email]" placeholder="email">
+          <input type="password" name="credentials[password]" placeholder="password">
+          <input type="password" name="credentials[password_confirmation]" placeholder="password confirmation">
+          <button type="submit">Sign Up</button>
+
+        </form>
+
+      </section>
+
+      <section>
+         <form id="sign-in">
+        <h1>Sign In</h1>
+        <input type="email" name="credentials[email]" placeholder="email">
+          <input type="password" name="credentials[password]" placeholder="password">
+          <button type="submit">Sign In</button>
+        </form>
+      </section>
+
+      <section>
+        <form id="change-password">
+      <h2>Change Password</h2>
+        <input placeholder="Old Password" type="text" name="passowrd [Old]">
+        <input placeholder="New Password" type="text" name="passowrd [New]">
+        <button type="submit">Change password</button>
+      </form>
+    </section>
+
+    <section>
+      <form id="start-game">
+      <h2 class="Start Game">Start Game</h2>
+    <button type="click">Start Game</button>
+  <div class="row">
+  <div  class="col-4 col-lg-4 box">0</div>
+  <div  class="col-4 col-lg-4 box">1</div>
+  <div  class="col-4 col-lg-4 box">2</div>
+  <div  class="col-4 col-lg-4 box">3</div>
+  <div  class="col-4 col-lg-4 box">4</div>
+  <div  class="col-4 col-lg-4 box">5</div>
+  <div  class="col-4 col-lg-4 box">6</div>
+  <div  class="col-4 col-lg-4 box">7</div>
+  <div  class="col-4 col-lg-4 box">8</div>
+    </div>
+    </form="">
+    <section>
+       <form id="sign-out">
+      <h3>Sign Out</h3>
+        <button type="submit">Sign Out</button>
+      </form>
+    </section>
+
+</section>
+    </body>
+
+</html>
